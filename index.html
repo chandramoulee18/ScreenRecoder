@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >    
+    <title>Screen Recorder</title>
+    <link rel="stylesheet" href="dist/main.css">
+</head>
+<body class="bg-gray-800 text-white">
+    <header class="bg-gray-900">
+        <div class="container mx-auto flex justify-centre items-center py-4">
+            <h1 class="text-2x1 font-bold uppercase">Screen Recorder</h1>
+        </div>
+    </header>
+    <main class="overflow-hidden">
+        <div class="container mx-auto py-8 px-4">
+            <h2 class="text-x1 text-gray-500 uppercase font-light">Video Recorder</h2>
+
+            <video src="" autoplay class="video-feedback bg-black w-full h-auto mb-4"></video>
+            <div class="flex justify-center items-center -mx-4 mb-8">
+                <button class="start-recording mx-4 flex-1 bg-gradient-to-br from-purple-400 to-pink-400 p-4 uppercase text-1g font-bold transition duration-300 hover:opacity-90 disabled:opacity-50">Strat Recording</button>
+                <button class="stop-recording mx-4 flex-1 bg-gradient-to-br from-purple-400 to-pink-400 p-4 uppercase text-1g font-bold transition duration-300 hover:opacity-90 disabled:opacity-50" disabled>Stop Recording</button>
+            </div>
+            <div class="recorded-video-wrap hidden">
+                <h2 class="text-x1 text-gray-500 uppercase font-light mb-4"> Download your video</h2>
+
+                <video src="" class="recorded-video bg-black w-full h-auto mb-4"></video>
+
+                <div class="flex text-center justify-center items-center -mx-4 mb-8">
+                    <a href="" class="download-video text-center  mx-4 flex-1 bg-gradient-to-br from-purple-400 to-pink-400 p-4
+                   uppercase text-1g font-bold transition duration-300 hover:opacity-90 disabled:opacity-50" disabled>
+                        Download  video
+                    </a>
+                </div>
+            </div>
+        </div>
+</main>
+    <script src="dist/main.js"></script>
+
+</body>
+</html>
